@@ -8,7 +8,7 @@ export RED=0xffff0000
 export BLUE=0xffff0000
 
 # -- Teal Scheme --
-export BAR_COLOR=0x00001f30
+export BAR_COLOR=0x01001f30
 export ITEM_BG_COLOR=0xff003547
 export ACCENT_COLOR=0xff2cf9ed
 export TEXT_COLOR=0xff001f30

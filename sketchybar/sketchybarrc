@@ -83,6 +83,7 @@ source $ITEM_DIR/battery.sh
 source $ITEM_DIR/cpu.sh
 source $ITEM_DIR/net.sh
 
+dynamic-island-sketchybar
 
 ##### Finalizing Setup #####
 # The below command is only needed at the end of the initial configuration to
