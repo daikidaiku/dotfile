@@ -37,8 +37,8 @@ case $service in
     color=$FG2;;
 esac
 
-# SPEED="$(networkQuality)"
-SPEED="==== SUMMARY ==== Uplink capacity: 58.511 Mbps Downlink capacity: 507.219 Mbps Responsiveness: Medium (137.931 milliseconds | 435 RPM) Idle Latency: 30.708 milliseconds | 2000 RPM"
+SPEED="$(networkQuality)"
+# SPEED="==== SUMMARY ==== Uplink capacity: 58.511 Mbps Downlink capacity: 507.219 Mbps Responsiveness: Medium (137.931 milliseconds | 435 RPM) Idle Latency: 30.708 milliseconds | 2000 RPM"
 
 UPLINK="$(echo $SPEED | grep -Eo "Uplink capacity: \d+\.\d+ .bps" | cut -d' ' -f3)"
 UPSPD="$(echo $SPEED | grep -Eo "Uplink capacity: \d+\.\d+ .bps" | cut -d' ' -f4)"
@@ -50,6 +50,6 @@ DOWNSPD="$(echo $SPEED | grep -Eo "Downlink capacity: \d+\.\d+ .bps" | cut -d' '
 # echo $DOWNLINK$DOWNSPD
 
 sketchybar --animate sin 5 \
+           --set net.up label="$UPLINK$UPSPD" icon.highlight=$(if [ "$DOWN" -gt "0" ]; then echo "on"; else echo "off"; fi) \
+           --set net.down label="$DOWNLINK$DOWNSPD" icon.highlight=$(if [ "$DOWN" -gt "0" ]; then echo "on"; else echo "off"; fi) \
            --set net.icon "$NAME" icon="$icon" icon.color="$color" \
-           --set net.up text="$UPLINK$UPSPD" \
-           --set net.down text="$DOWNLINK$DOWNSPD"
