@@ -5,7 +5,7 @@ source "$HOME/.config/sketchybar/colors.sh"
 sketchybar --add item net.icon right 100                 \
            --set net.icon script="$PLUGIN_DIR/net.sh" \
                      updates=on                  \
-                     update_freq=5            \
+                     update_freq=30            \
                      label.drawing=off         \
                      width=105   \
            --subscribe net.icon wifi_change \
