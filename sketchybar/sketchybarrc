@@ -64,7 +64,8 @@ source $ITEM_DIR/front_app.sh
 
 
 # -- Right Side Of Notch Items --
-source $ITEM_DIR/media.sh
+
+# source $ITEM_DIR/media.sh
 
 ##### Adding Right Items #####
 # In the same way as the left items we can add items to the right side.
@@ -84,6 +85,8 @@ source $ITEM_DIR/cpu.sh
 source $ITEM_DIR/net.sh
 
 dynamic-island-sketchybar
+
+dynamic-island-sketchybar --update
 
 ##### Finalizing Setup #####
 # The below command is only needed at the end of the initial configuration to
