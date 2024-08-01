@@ -41,7 +41,12 @@ local plugins = {
   {
     'nvim-tree/nvim-tree.lua',
     keys = {
-      '<leader>ex'
+      '<leader>ex',
+    },
+    config = function() require 'extensions.nvim-tree' end,
+    dependencies = {
+      'nvim-tree/nvim-web-devicons',
+      'nvim-telescope/telescope.nvim',
     }
   }
 }
