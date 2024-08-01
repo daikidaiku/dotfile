@@ -36,9 +36,9 @@ style = 'fg:#1a1b26 bg:#7aa2f7'
 disabled = false
 
 [os.symbols]
-Macos = "  " # nf-fa-apple
-Ubuntu = "  " # nf-linux-ubuntu
-Debian = "  " # nf-linux-debian
+Macos = " " # nf-fa-apple
+Ubuntu = " " # nf-linux-ubuntu
+Debian = " " # nf-linux-debian
 
 [directory]
 truncation_length = 6
