@@ -13,7 +13,7 @@ sketchybar --add item net.icon right 100                 \
            --set net.up label.font="$FONT:Bold:12.0" \
                                y_offset=5 \
                                width=0 \
-                               update_freq=1 \
+                               update_freq=120 \
                                script="$PLUGIN_DIR/network.sh" \
                                background.padding_right=-75   \
                                --add item net.up right \
@@ -21,7 +21,7 @@ sketchybar --add item net.icon right 100                 \
            --set net.down label.font="$FONT:Bold:12.0" \
                                y_offset=-5 \
                                width=0 \
-                               update_freq=1 \
+                               update_freq=120 \
                                background.padding_right=-75   \
             --add item up.icon right \
             --set up.icon      label.drawing=off         \
@@ -30,7 +30,6 @@ sketchybar --add item net.icon right 100                 \
                                icon.highlight_color=$BLUE \
                                y_offset=5 \
                                width=0 \
-                               update_freq=1 \
                                background.padding_right=-10   \
             --add item down.icon right \
             --set down.icon    label.drawing=off         \
@@ -39,7 +38,6 @@ sketchybar --add item net.icon right 100                 \
                                icon.highlight_color=$BLUE \
                                y_offset=-5 \
                                width=0 \
-                               update_freq=1 \
                                background.padding_right=-10   \
            
 
